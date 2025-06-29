@@ -1,0 +1,82 @@
+import { PromptTemplate } from '../types';
+
+export const promptTemplates: PromptTemplate[] = [
+  // Image Templates
+  {
+    id: 'portrait-professional',
+    name: 'Professional Portrait',
+    category: 'image',
+    description: 'High-quality professional headshots and portraits',
+    template: 'Professional portrait of {subject}, {style}, studio lighting, 8K resolution, sharp focus, detailed facial features, {mood} expression, {background}',
+    tags: ['portrait', 'professional', 'headshot'],
+    aiModel: 'GPT-4o',
+    featured: true,
+  },
+  {
+    id: 'landscape-cinematic',
+    name: 'Cinematic Landscape',
+    category: 'image',
+    description: 'Breathtaking landscape photography with cinematic quality',
+    template: 'Cinematic landscape of {location}, {time_of_day}, dramatic lighting, ultra-wide shot, 8K HDR, {weather_condition}, professional photography, {color_palette}',
+    tags: ['landscape', 'cinematic', 'nature'],
+    aiModel: 'GPT-4o',
+    featured: true,
+  },
+  {
+    id: 'product-commercial',
+    name: 'Commercial Product',
+    category: 'image',
+    description: 'High-end product photography for marketing',
+    template: 'Commercial product photography of {product}, {background_style}, professional studio lighting, 8K resolution, {angle}, clean composition, {brand_aesthetic}',
+    tags: ['product', 'commercial', 'marketing'],
+    aiModel: 'GPT-4o',
+  },
+  {
+    id: 'artistic-abstract',
+    name: 'Abstract Art',
+    category: 'image',
+    description: 'Creative abstract and artistic compositions',
+    template: 'Abstract art piece, {art_style}, {color_scheme}, {texture}, high resolution, {mood}, digital art, {composition_style}',
+    tags: ['abstract', 'art', 'creative'],
+    aiModel: 'Midjourney',
+  },
+  
+  // Video Templates
+  {
+    id: 'cinematic-scene',
+    name: 'Cinematic Scene',
+    category: 'video',
+    description: 'Movie-quality cinematic scenes and sequences',
+    template: 'Cinematic scene: {scene_description}, {camera_movement}, {lighting_style}, 4K resolution, {duration} seconds, {mood}, professional cinematography, {color_grading}',
+    tags: ['cinematic', 'scene', 'movie'],
+    aiModel: 'Veo3',
+    featured: true,
+  },
+  {
+    id: 'product-demo',
+    name: 'Product Demo',
+    category: 'video',
+    description: 'Engaging product demonstration videos',
+    template: 'Product demonstration video: {product}, {demo_action}, clean background, {camera_angle}, {duration} seconds, professional lighting, {brand_style}',
+    tags: ['product', 'demo', 'commercial'],
+    aiModel: 'Veo3',
+  },
+  {
+    id: 'nature-timelapse',
+    name: 'Nature Timelapse',
+    category: 'video',
+    description: 'Beautiful nature and landscape timelapses',
+    template: 'Timelapse video: {nature_scene}, {time_progression}, {duration} seconds, 4K resolution, smooth transitions, {weather_changes}, natural lighting',
+    tags: ['nature', 'timelapse', 'landscape'],
+    aiModel: 'Sora',
+  },
+  {
+    id: 'motion-graphics',
+    name: 'Motion Graphics',
+    category: 'video',
+    description: 'Dynamic motion graphics and animations',
+    template: 'Motion graphics animation: {concept}, {animation_style}, {duration} seconds, {color_palette}, smooth transitions, {text_elements}, modern design',
+    tags: ['motion', 'graphics', 'animation'],
+    aiModel: 'Veo3',
+  },
+];

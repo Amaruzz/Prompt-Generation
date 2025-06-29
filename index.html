@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwapnaSilpam - Where Dreams Become Digital Masterpieces</title>
+    <meta name="description" content="Turn your wildest imagination into breathtaking 8K visuals and cinematic videos. AI-powered creativity that brings dreams to life with Veo3, Sora, GPT-4o, and Midjourney." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #ffffff 0%, #e5e5e5 50%, #ffffff 100%);
+        background-size: 200% 200%;
+        animation: shimmer 3s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-gradient-text {
+        background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 25%, #ffffff 50%, #fbbf24 75%, #f59e0b 100%);
+        background-size: 300% 300%;
+        animation: heroShimmer 4s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-family: 'Playfair Display', serif;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        text-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
+      }
+
+      .magic-text {
+        background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 25%, #ffffff 50%, #f59e0b 75%, #fbbf24 100%);
+        background-size: 300% 300%;
+        animation: magicShimmer 4s ease-in-out infinite reverse;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        text-shadow: 0 0 40px rgba(251, 191, 36, 0.3);
+      }
+
+      .elegant-text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      @keyframes shimmer {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+
+      @keyframes heroShimmer {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+
+      @keyframes magicShimmer {
+        0%, 100% { background-position: 100% 50%; }
+        50% { background-position: 0% 50%; }
+      }
+
+      .floating-element {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .floating-element:nth-child(1) {
+        width: 120px;
+        height: 120px;
+        top: 15%;
+        left: 10%;
+        animation-delay: 0s;
+      }
+
+      .floating-element:nth-child(2) {
+        width: 80px;
+        height: 80px;
+        top: 60%;
+        right: 20%;
+        animation-delay: 3s;
+      }
+
+      .floating-element:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        bottom: 25%;
+        left: 25%;
+        animation-delay: 6s;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.4; }
+        33% { transform: translateY(-30px) rotate(120deg); opacity: 0.7; }
+        66% { transform: translateY(15px) rotate(240deg); opacity: 0.5; }
+      }
+
+      .grid-pattern {
+        background-image: 
+          linear-gradient(rgba(245, 158, 11, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(245, 158, 11, 0.05) 1px, transparent 1px);
+        background-size: 50px 50px;
+      }
+
+      .hero-bg {
+        background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
